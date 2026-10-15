@@ -1,0 +1,114 @@
+.hero {
+    min-height: 420px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 45px 7%;
+    background-image:
+        linear-gradient(
+            to right,
+            rgba(245, 239, 230, 0.98) 0%,
+            rgba(230, 213, 184, 0.90) 35%,
+            rgba(198, 156, 109, 0.45) 58%,
+            rgba(198, 156, 109, 0.05) 100%
+        ),
+        url("/src/assets/img/hero-cafe.avif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.hero-conteudo {
+    max-width: 440px;
+}
+.hero-conteudo h2 {
+    color: #4a2c2a;
+    font-family: "Playfair Display", serif;
+    font-size: clamp(2rem, 3.2vw, 2.6rem);
+    line-height: 1.08;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+.hero-conteudo p {
+    max-width: 370px;
+    color: #4a2c2a;
+    font-size: 1.05rem;
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+.hero-botoes {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+.botao {
+    display: inline-block;
+    padding: 12px 18px;
+    border-radius: 5px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+.botao-principal {
+    background-color: #4a2c2a;
+    color: #E6D5B8;
+    border: 2px solid #4a2c2a;
+}
+.botao-principal:hover {
+    background-color: #63413a;
+    border-color: #63413a;
+    transform: translateY(-2px);
+}
+.botao-secundario {
+    background-color: rgba(245, 239, 230, 0.55);
+    color: #4a2c2a;
+    border: 2px solid #8b6b58;
+}
+.botao-secundario:hover {
+    background-color: #4a2c2a;
+    color: #E6D5B8;
+    transform: translateY(-2px);
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 600px) {
+    .hero {
+        min-height: 450px;
+        padding: 40px 6%;
+
+        background-position: 62% center;
+
+        background-image:
+            linear-gradient(
+                to right,
+                rgba(245, 239, 230, 0.96),
+                rgba(245, 239, 230, 0.78)
+            ),
+            url("./assets/img/hero-cafe.jpg");
+    }
+
+    .hero-conteudo h2 {
+        font-size: 2rem;
+    }
+
+    .hero-conteudo p {
+        font-size: 1rem;
+    }
+
+    .hero-botoes {
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .botao {
+        padding: 11px 13px;
+        font-size: 0.88rem;
+    }
+}
+
