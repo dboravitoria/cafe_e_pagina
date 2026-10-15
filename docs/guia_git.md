@@ -42,7 +42,7 @@ para a branch main.
 
 ## ⚠️ Importante
 
-Não faça alterações diretamente na main.
+### Não faça alterações diretamente na main.
 
 Não use `git push --force`.
 
