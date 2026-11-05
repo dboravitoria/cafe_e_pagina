@@ -1,8 +1,11 @@
+
+/*HERO - SEÇÃO PRINCIPAL */
+
 .hero {
-    min-height: 420px;
-    width: 100%;
     display: flex;
     align-items: center;
+    width: 100%;
+    min-height: 420px;
     padding: 45px 7%;
     background-image:
         linear-gradient(
@@ -17,23 +20,26 @@
     background-position: center;
     background-repeat: no-repeat;
 }
+
+/* Conteúdo do Hero */
+
 .hero-conteudo {
     max-width: 440px;
 }
 .hero-conteudo h2 {
+    margin-bottom: 18px;
     color: #4a2c2a;
     font-family: "Playfair Display", serif;
     font-size: clamp(2rem, 3.2vw, 2.6rem);
-    line-height: 1.08;
     font-weight: 700;
-    margin-bottom: 18px;
+    line-height: 1.08;
 }
 .hero-conteudo p {
     max-width: 370px;
+    margin-bottom: 25px;
     color: #4a2c2a;
     font-size: 1.05rem;
     line-height: 1.5;
-    margin-bottom: 25px;
 }
 .hero-botoes {
     display: flex;
@@ -49,10 +55,7 @@
     font-weight: 600;
     text-align: center;
     text-decoration: none;
-    transition:
-        background-color 0.3s ease,
-        color 0.3s ease,
-        transform 0.3s ease;
+    transition:background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
 }
 .botao-principal {
     background-color: #4a2c2a;
@@ -75,15 +78,230 @@
     transform: translateY(-2px);
 }
 
-/* RESPONSIVIDADE */
+/*TÍTULOS E CONFIGURAÇÕES DAS SEÇÕES*/
+
+.secao-favoritos, .secao-livros {
+    padding: 30px 5%;
+}
+.secao-titulo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+.secao-titulo h2 {
+    color: #4a2c2a;
+    font-family: "Playfair Display", serif;
+    font-size: 1.5rem;
+    white-space: nowrap;
+}
+.secao-titulo span {
+    flex: 1;
+    height: 1px;
+    background-color: #b9a18a;
+}
+
+/* PRODUTOS FAVORITOS*/
+
+.produtos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.produto-card {
+    overflow: hidden;
+    border: 1px solid #c9b9a7;
+    border-radius: 5px;
+    background-color: #f9f5ef;
+    transition: transform 0.3s ease;
+}
+.produto-card img {
+    display: block;
+    width: calc(100% - 16px);
+    height: 115px;
+    margin: 8px auto;
+    border-radius: 3px;
+    object-fit: contain;
+}
+.produto-info {
+    padding: 8px 12px 12px;
+    color: #4a2c2a;
+}
+.produto-info h3, .livro-info h3 {
+    margin-bottom: 5px;
+    font-family: "Playfair Display", serif;
+    font-size: 1rem;
+}
+.produto-info p {
+    margin-bottom: 8px;
+    font-size: 0.85rem;
+    line-height: 1.5;
+}
+.produto-info strong {
+    font-size: 0.9rem;
+}
+
+
+/* LIVROS */
+
+.livros-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.livro-card {
+    padding: 12px;
+    border: 1px solid #c9b9a7;
+    border-radius: 5px;
+    background-color: #f9f5ef;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+.livro-card img {
+    display: block;
+    width: 100%;
+    height: 155px;
+    margin-bottom: 10px;
+    object-fit: contain;
+}
+.livro-info {
+    color: #4a2c2a;
+}
+.livro-info h3 {
+    font-size: 0.95rem;
+}
+.livro-info p {
+    font-size: 0.8rem;
+}
+.produto-card:hover, .livro-card:hover {
+    transform: translateY(-4px);
+}
+
+/* NOSSO ESPAÇO*/
+
+.secao-espaco {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 30px;
+    margin: 10px 5% 30px;
+    padding: 20px;
+    background-color: #e6d5b8;
+    border-radius: 6px;
+}
+.espaco-imagem img {
+    display: block;
+    width: 100%;
+    height: 220px;
+    border-radius: 4px;
+    object-fit: cover;
+}
+.espaco-conteudo {
+    color: #4a2c2a;
+}
+.espaco-conteudo h2 {
+    margin-bottom: 8px;
+    font-family: "Playfair Display", serif;
+    font-size: 1.5rem;
+}
+.espaco-conteudo h3 {
+    margin-bottom: 10px;
+    font-family: "Playfair Display", serif;
+    font-size: 1.15rem;
+}
+.espaco-conteudo p {
+    margin-bottom: 18px;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+.espaco-conteudo .botao {
+    font-size: 0.85rem;
+}
+
+/* NEWSLETTER */
+
+.secao-newsletter {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 30px;
+    padding: 30px 5%;
+    border-top: 1px solid #c9b9a7;
+}
+.newsletter-texto {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    color: #4a2c2a;
+}
+.newsletter-icone span {
+    font-size: 2.2rem;
+}
+.newsletter-texto h2 {
+    margin-bottom: 8px;
+    font-family: "Playfair Display", serif;
+    font-size: 1.3rem;
+}
+.newsletter-texto p {
+    font-size: 0.85rem;
+    line-height: 1.6;
+}
+.newsletter-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.campo-newsletter {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.campo-newsletter label {
+    color: #4a2c2a;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+.campo-newsletter input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #c9b9a7;
+    border-radius: 5px;
+    background-color: #fffdf9;
+    color: #4a2c2a;
+    font-family: "Montserrat", sans-serif;
+    outline: none;
+}
+.campo-newsletter input:focus {
+    border-color: #8b6b58;
+}
+.newsletter-form button {
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+}
+
+/*  RESPONSIVIDADE */
+
+@media (max-width: 700px) {
+
+    .produtos-grid, .livros-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .secao-espaco, .secao-newsletter {
+        grid-template-columns: 1fr;
+    }
+    .espaco-imagem img {
+        height: 200px;
+    }
+}
+
+/* Celulares */
 
 @media (max-width: 600px) {
+
     .hero {
         min-height: 450px;
         padding: 40px 6%;
-
         background-position: 62% center;
-
         background-image:
             linear-gradient(
                 to right,
@@ -92,23 +310,36 @@
             ),
             url("./assets/img/hero-cafe.jpg");
     }
-
     .hero-conteudo h2 {
         font-size: 2rem;
     }
-
     .hero-conteudo p {
         font-size: 1rem;
     }
-
     .hero-botoes {
         align-items: flex-start;
         gap: 10px;
     }
-
     .botao {
         padding: 11px 13px;
         font-size: 0.88rem;
     }
 }
 
+/* Celulares menores */
+
+@media (max-width: 480px) {
+
+    .produtos-grid, .livros-grid {
+        grid-template-columns: 1fr;
+    }
+    .secao-titulo h2 {
+        font-size: 1.2rem;
+    }
+    .secao-espaco {
+        padding: 15px;
+    }
+    .newsletter-texto {
+        gap: 10px;
+    }
+}

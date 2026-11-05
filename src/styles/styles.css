@@ -34,7 +34,6 @@ main {
     align-items: center;
     flex-shrink: 0;
 }
-
 .logo img {
     display: block;
     width: 390px;
@@ -127,9 +126,7 @@ main {
     height: 30px;
     border: 1px solid #E6D5B8;
     border-radius: 50%;
-    transition:
-        background-color 0.3s ease,
-        border-color 0.3s ease;
+    transition:background-color 0.3s ease, border-color 0.3s ease;
 }
 .rodape-redes a:hover {
     background-color: #C69C6D;

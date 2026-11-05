@@ -27,13 +27,12 @@
             </ul>
         </nav>
     </header>
+
     <main>
+    <!-- SESSÃO HERO -->
     <section class="hero">
         <div class="hero-conteudo">
-            <h2>
-                Um café para<br>
-                acompanhar<br>
-                cada história.
+            <h2>Um café para<br>acompanhar<br>cada história.
             </h2>
             <p>Cafés especiais, livros e um espaço feito para você desacelerar.</p>
             <div class="hero-botoes">
@@ -42,7 +41,118 @@
             </div>
         </div>
     </section>
+    <!-- NOSSOS FAVORITOS -->
+    <section class="secao-favoritos">
+        <div class="secao-titulo">
+            <h2>Nossos favoritos</h2>
+            <span></span>
+        </div>
+
+        <div class="produtos-grid">
+            <article class="produto-card">
+                <img src="/src/assets/img/iconcafe.jpeg" alt="Xícara de café cappuccino">
+                <div class="produto-info">
+                    <h3>Café Cappuccino</h3>
+                    <p>Espresso, leite vaporizado e espuma cremosa.</p>
+                    <strong>R$ 12,90</strong>
+                </div>
+            </article>
+
+            <article class="produto-card">
+                <img src="/src/assets/img/iconbolo.png" alt="Fatia de bolo de chocolate">
+                <div class="produto-info">
+                    <h3>Bolo de Chocolate</h3>
+                    <p>Bolo artesanal com cobertura de chocolate.</p>
+                    <strong>R$ 15,90</strong>
+                </div>
+            </article>
+
+            <article class="produto-card">
+                <img src="/src/assets/img/iconcoador.png" alt="Café coado">
+                <div class="produto-info">
+                    <h3>Café Coado</h3>
+                    <p>Café especial preparado na hora.</p>
+                    <strong>R$ 9,90</strong>
+                </div>
+            </article>
+        </div>
+    </section>
+    <!-- LIVROS -->
+    <section class="secao-livros">
+        <div class="secao-titulo">
+            <h2>Para acompanhar seu café</h2>
+            <span></span>
+        </div>
+
+        <div class="livros-grid">
+            <article class="livro-card">
+                <img src="/src/assets/img/iconlivro1.jpeg" alt="Capa do livro Dom Casmurro">
+                <div class="livro-info">
+                    <h3>Dom Casmurro</h3>
+                    <p>Machado de Assis</p>
+                </div>
+            </article>
+
+            <article class="livro-card">
+                <img src="/src/assets/img/iconlivro2.png" alt="Capa do livro Frankenstein">
+                <div class="livro-info">
+                    <h3>Frankenstein</h3>
+                    <p>Mary Shelley</p>
+                </div>
+            </article>
+
+            <article class="livro-card">
+                <img src="/src/assets/img/iconlivro1.jpeg" alt="Capa do livro O Retrato de Dorian Gray">
+                <div class="livro-info">
+                    <h3>O Retrato de Dorian Gray</h3>
+                    <p>Oscar Wilde</p>
+                </div>
+            </article>
+        </div>
+    </section>
+    <!-- NOSSO ESPAÇO -->
+    <section class="secao-espaco">
+        <div class="espaco-imagem">
+            <img src="/src/assets/img/hero-mesa.jpeg" alt="Ambiente aconchegante da cafeteria">
+        </div>
+
+        <div class="espaco-conteudo">
+            <h2>Nosso espaço</h2>
+            <h3>Mais que uma cafeteria.</h3>
+            <p>O Café & Página nasceu para reunir duas coisas que combinam perfeitamente: uma boa xícara de café e uma boa história.</p>
+            <a href="sobre.html" class="botao botao-principal">Conheça nossa história</a>
+        </div>
+    </section>
+    <!-- NEWSLETTER -->
+    <section class="secao-newsletter">
+        <div class="newsletter-texto">
+            <div class="newsletter-icone">
+                <!-- Usei emoji mesmo pra facilitar -->
+                <span>✉</span>
+            </div>
+
+            <div>
+                <h2>Receba nossas novidades</h2>
+                <p>Cadastre seu e-mail e receba novidades sobre novos livros, cafés especiais e eventos.</p>
+            </div>
+        </div>
+
+        <form class="newsletter-form">
+            <div class="campo-newsletter">
+                <label for="nome-newsletter">Nome</label>
+                <input type="text" id="nome-newsletter" name="nome" placeholder="Seu nome" required>
+            </div>
+
+            <div class="campo-newsletter">
+                <label for="email-newsletter">E-mail</label>
+                <input type="email" id="email-newsletter" name="email" placeholder="seu@email.com" required>
+            </div>
+
+            <button type="submit" class="botao botao-principal">Quero receber novidades</button>
+        </form>
+    </section>
     </main>
+
     <footer class="rodape">
         <div class="rodape-conteudo">
             <a href="index.html" class="rodape-logo">
@@ -51,22 +161,10 @@
                     <p>Um café para acompanhar cada história.</p>
                 </div>
             </a>
-            <div class="rodape-redes">
-                <a href="https://www.instagram.com/" target="_blank">
-                    <img src="./assets/icon/instagram.svg" alt="">
-                </a>
-                <a href="https://www.facebook.com/"target="_blank">
-                    <img src="./assets/icon/facebook.svg" alt="">
-                </a>
-            </div>
         </div>
 
         <div class="rodape-creditos">
-            <p>
-                © 2026 Café & Página
-                <span class="separador">|</span>
-                Projeto acadêmico — Faculdade Estácio
-            </p>
+            <p>© 2026 Café & Página<span class="separador">|</span> Projeto acadêmico — Faculdade Estácio</p>
         </div>
     </footer>
 
