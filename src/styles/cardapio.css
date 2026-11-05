@@ -1,0 +1,251 @@
+/* 
+.secao-favoritos, .secao-livros {
+    padding: 30px 5%;
+}
+.secao-titulo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+.secao-titulo h2 {
+    color: #4a2c2a;
+    font-family: "Playfair Display", serif;
+    font-size: 1.5rem;
+    white-space: nowrap;
+}
+.secao-titulo span {
+    flex: 1;
+    height: 1px;
+    background-color: #b9a18a;
+}
+.produtos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.produto-card {
+    overflow: hidden;
+    border: 1px solid #c9b9a7;
+    border-radius: 5px;
+    background-color: #f9f5ef;
+    transition: transform 0.3s ease;
+}
+.produto-card img {
+    display: block;
+    width: calc(100% - 16px);
+    height: 115px;
+    margin: 8px auto;
+    border-radius: 3px;
+    object-fit: contain;
+}
+.produto-info {
+    padding: 8px 12px 12px;
+    color: #4a2c2a;
+}
+.produto-info h3, .livro-info h3 {
+    margin-bottom: 5px;
+    font-family: "Playfair Display", serif;
+    font-size: 1rem;
+}
+.produto-info p {
+    margin-bottom: 8px;
+    font-size: 0.85rem;
+    line-height: 1.5;
+}
+.produto-info strong {
+    font-size: 0.9rem;
+} */
+
+/* ========================================
+   PÁGINA DO CARDÁPIO
+======================================== */
+
+.pagina-cardapio {
+    width: 100%;
+    padding: 35px 5%;
+    color: #4a2c2a;
+}
+
+/* INTRODUÇÃO */
+
+.cardapio-intro {
+    margin-bottom: 30px;
+}
+
+.cardapio-intro h1 {
+    margin-bottom: 5px;
+    font-family: "Playfair Display", serif;
+    font-size: 2rem;
+    color: #4a2c2a;
+}
+
+.cardapio-intro p {
+    font-size: 0.95rem;
+    color: #6b5148;
+}
+
+/* FILTROS */
+
+.filtros-cardapio {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.filtro {
+    min-width: 90px;
+    padding: 8px 18px;
+    border: 1px solid #b9a18a;
+    border-radius: 25px;
+    color: #4a2c2a;
+    text-align: center;
+    text-decoration: none;
+    font-size: 0.85rem;
+    transition: 0.3s ease;
+}
+
+.filtro:hover,
+.filtro.ativo {
+    background-color: #4a2c2a;
+    border-color: #4a2c2a;
+    color: #f5efe6;
+}
+
+/* CATEGORIAS */
+
+.categoria-cardapio {
+    margin-bottom: 28px;
+    scroll-margin-top: 20px;
+}
+
+.categoria-titulo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.categoria-titulo h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 1.35rem;
+    color: #4a2c2a;
+}
+
+.categoria-titulo span {
+    flex: 1;
+    height: 1px;
+    background-color: #b9a18a;
+}
+
+/* GRID DOS PRODUTOS */
+
+.cardapio-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 15px;
+}
+
+/* CARD */
+
+.item-cardapio {
+    overflow: hidden;
+    border: 1px solid #c9b9a7;
+    border-radius: 5px;
+    background-color: #f9f5ef;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.item-cardapio:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 10px rgba(74, 44, 42, 0.12);
+}
+
+/* IMAGEM / ÁREA ILUSTRATIVA */
+
+/* ÁREA DA IMAGEM */
+
+.item-imagem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 115px;
+    margin: 8px;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+/* IMAGEM DO PRODUTO */
+
+.item-imagem img {
+    display: block;
+    width: calc(100% - 16px);
+    height: 100%;
+    object-fit: contain;
+    border-radius: 3px;
+}
+/* INFORMAÇÕES */
+
+.item-info {
+    padding: 7px 10px 12px;
+}
+
+.item-info h3 {
+    margin-bottom: 5px;
+    font-family: "Playfair Display", serif;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #4a2c2a;
+}
+
+.item-info strong {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #4a2c2a;
+}
+
+/* ========================================
+   RESPONSIVIDADE
+======================================== */
+
+@media (max-width: 900px) {
+    .cardapio-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    .pagina-cardapio {
+        padding: 25px 5%;
+    }
+
+    .cardapio-intro h1 {
+        font-size: 1.7rem;
+    }
+
+    .cardapio-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+    .item-imagem {
+        height: 95px;
+    }
+
+    .filtros-cardapio {
+        gap: 8px;
+    }
+
+    .filtro {
+        min-width: 75px;
+        padding: 7px 12px;
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 380px) {
+    .cardapio-grid {
+        grid-template-columns: 1fr;
+    }
+}

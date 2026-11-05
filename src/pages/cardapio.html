@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/styles/styles.css">
+    <link rel="stylesheet" href="/src/styles/cardapio.css">
+    <title>Café e Página - Cardápio</title>
+    <link rel="shortcut icon" href="/src/assets/icon/favicon.png" type="image/x-icon">
+
+</head>
+<body>
+    <header class="cabecalho">
+        <nav class="navegacao" aria-label="Menu principal">
+            <a href="/src/pages/index.html" class="logo" aria-label="Café & Página - Início">
+                <img src="/src/assets/icon/logoClara.png" alt="Logo Café & Página: uma xícara sobre um livro aberto" width="200">
+            </a>
+            <ul class="menu">
+                <li><a href="/src/pages/index.html" >Início</a></li>
+                <li><a href="/src/pages/cardapio.html" class="ativo">Cardápio</a></li>
+                <li><a href="/src/pages/livros.html">Livros</a></li>
+                <li><a href="/src/pages/sobre.html">Sobre</a></li>
+                <li><a href="/src/pages/contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="pagina-cardapio">
+
+    <!-- TÍTULO E DESCRIÇÃO -->
+    <section class="cardapio-intro">
+        <h1>Nosso cardápio</h1>
+        <p>Sabores que combinam com boas histórias.</p>
+
+        <!-- NAVEGAÇÃO ENTRE CATEGORIAS -->
+        <nav class="filtros-cardapio" aria-label="Categorias do cardápio">
+            <a href="#cafes" class="filtro ativo">Todos</a>
+            <a href="#cafes" class="filtro">Cafés</a>
+            <a href="#chas" class="filtro">Chás</a>
+            <a href="#doces" class="filtro">Doces</a>
+            <a href="#salgados" class="filtro">Salgados</a>
+        </nav>
+    </section>
+
+    <!-- CAFÉS -->
+    <section class="categoria-cardapio" id="cafes">
+        <div class="categoria-titulo">
+            <h2>Cafés</h2>
+            <span></span>
+        </div>
+
+        <div class="cardapio-grid">
+
+            <article class="item-cardapio">
+                <div class="item-imagem">
+                    <img src="/src/assets/img/iconcoador.png" alt="iamgem de café">
+                </div>
+                <div class="item-info">
+                    <h3>Espresso</h3>
+                    <strong>R$ 8,90</strong>
+                </div>
+            </article>
+
+            <article class="item-cardapio">
+                <div class="item-imagem">
+                    <img src="/src/assets/img/iconcoador.png" alt="iamgem de café">
+                </div>                
+                <div class="item-info">
+                    <h3>Cappuccino</h3>
+                    <strong>R$ 12,90</strong>
+                </div>
+            </article>
+
+            <article class="item-cardapio">
+                <div class="item-imagem">
+                    <img src="/src/assets/img/iconcoador.png" alt="iamgem de café">
+                </div>                
+                <div class="item-info">
+                    <h3>Café Coado</h3>
+                    <strong>R$ 9,90</strong>
+                </div>
+            </article>
+
+            <article class="item-cardapio">
+                <div class="item-imagem">
+                    <img src="/src/assets/img/iconcoador.png" alt="iamgem de café">
+                </div>                
+                <div class="item-info">
+                    <h3>Mocha</h3>
+                    <strong>R$ 14,90</strong>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- CHÁS -->
+    <section class="categoria-cardapio" id="chas">
+        <div class="categoria-titulo">
+            <h2>Chás</h2>
+            <span></span>
+        </div>
+
+        <div class="cardapio-grid">
+
+            <article class="item-cardapio">
+                <div class="item-imagem">
+                    <img src="/src/assets/img/iconcafe.jpeg" alt="iamgem de café">
+                </div>
+                <div class="item-info">
+                    <h3>Chá Verde</h3>
+                    <strong>R$ 7,90</strong>
+                </div>
+            </article>
+
+            <article class="item-cardapio">
+                <div class="item-imagem">
+                    <img src="/src/assets/img/iconcafe.jpeg" alt="iamgem de café">
+                </div>
+                <div class="item-info">
+                    <h3>Chá de Camomila</h3>
+                    <strong>R$ 7,90</strong>
+                </div>
+            </article>
+
+            <article class="item-cardapio">
+                <div class="item-imagem">
+                    <img src="/src/assets/img/iconcafe.jpeg" alt="iamgem de café">
+                </div>
+                <div class="item-info">
+                    <h3>Chá de Frutas Vermelhas</h3>
+                    <strong>R$ 8,90</strong>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- DOCES -->
+    <section class="categoria-cardapio" id="doces">
+        <div class="categoria-titulo">
+            <h2>Doces</h2>
+            <span></span>
+        </div>
+
+        <div class="cardapio-grid">
+
+            <article class="item-cardapio">
+                <div class="item-imagem">
+                    <img src="/src/assets/img/iconbolo.png" alt="iamgem bolo">
+                </div>
+                <div class="item-info">
+                    <h3>Bolo de Chocolate</h3>
+                    <strong>R$ 15,90</strong>
+                </div>
+            </article>
+
+            <article class="item-cardapio">
+                <div class="item-imagem">
+                    <img src="/src/assets/img/iconbolo.png" alt="iamgem bolo">
+                </div>
+                <div class="item-info">
+                    <h3>Cheesecake</h3>
+                    <strong>R$ 14,90</strong>
+                </div>
+            </article>
+
+            <article class="item-cardapio">
+                <div class="item-imagem">
+                    <img src="/src/assets/img/iconbolo.png" alt="iamgem bolo">
+                </div>
+                <div class="item-info">
+                    <h3>Brownie</h3>
+                    <strong>R$ 12,90</strong>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- SALGADOS -->
+    <section class="categoria-cardapio" id="salgados">
+        <div class="categoria-titulo">
+            <h2>Salgados</h2>
+            <span></span>
+        </div>
+
+        <div class="cardapio-grid">
+
+            <article class="item-cardapio">
+                <div class="item-imagem">
+                    <img src="/src/assets/img/iconcroassant.jpeg" alt="iamgem croassant">
+                </div>
+                <div class="item-info">
+                    <h3>Croissant</h3>
+                    <strong>R$ 11,90</strong>
+                </div>
+            </article>
+
+            <article class="item-cardapio">
+                <div class="item-imagem">
+                    <img src="/src/assets/img/iconpao.jpeg" alt="iamgem pao">
+                </div>
+                <div class="item-info">
+                    <h3>Pão de Queijo</h3>
+                    <strong>R$ 8,90</strong>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    </main>
+    <footer class="rodape">
+        <div class="rodape-conteudo">
+            <a href="index.html" class="rodape-logo">
+                <img src="/src/assets/icon/logoClara.png" alt="Café & Página">
+                <div class="rodape-identidade">
+                    <p>Um café para acompanhar cada história.</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="rodape-creditos">
+            <p>© 2026 Café & Página<span class="separador">|</span> Projeto acadêmico — Faculdade Estácio</p>
+        </div>
+    </footer>
+</body>
+</html>
