@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/src/styles/styles.css">
+    <link rel="stylesheet" href="/src/styles/livros.css">
     <title>Café e Página - Livros</title>
     <link rel="shortcut icon" href="/src/assets/icon/favicon.png" type="image/x-icon">
 
@@ -28,7 +29,102 @@
             </ul>
         </nav>
     </header>
+
     <main>
+        <section class="livros-hero">
+            <h1>Uma boa história também<br>combina com café.</h1>
+            <form class="pesquisa-livros" id="form-pesquisa">
+                <input type="search" id="pesquisa" placeholder="Digite o nome do livro..." aria-label="Pesquisar livros">
+                <button type="submit" aria-label="Pesquisar">⌕</button>
+            </form>
+        </section>
+
+        <section class="secao-catalogo">
+            <div class="secao-titulo">
+                <h2>Catálogo</h2>
+                <span></span>
+            </div>
+
+            <div class="catalogo-grid" id="catalogo">
+                <article class="catalogo-card">
+                    <div class="livro-capa">
+                        <img src="/src/assets/img/iconlivro1.jpeg" alt="Capa do livro Dom Casmurro">
+                    </div>
+                    <div class="catalogo-info">
+                        <h3>Dom Casmurro</h3>
+                        <p>Machado de Assis</p>
+                        <span class="categoria">Literatura brasileira</span>
+                        <a href="#" class="botao-livro">Saiba mais</a>
+                    </div>
+                </article>
+
+                <article class="catalogo-card">
+                    <div class="livro-capa">
+                        <img src="/src/assets/img/iconlivro2.png" alt="Capa do livro Frankenstein">
+                    </div>
+                    <div class="catalogo-info">
+                        <h3>Frankenstein</h3>
+                        <p>Mary Shelley</p>
+                        <span class="categoria">Ficção científica</span>
+                        <a href="#" class="botao-livro">Saiba mais</a>
+                    </div>
+                </article>
+
+                <article class="catalogo-card">
+                    <div class="livro-capa">
+                        <img src="/src/assets/img/iconlivro1.jpeg" alt="Capa do livro O Retrato de Dorian Gray">
+                    </div>
+                    <div class="catalogo-info">
+                        <h3>O Retrato de Dorian Gray</h3>
+                        <p>Oscar Wilde</p>
+                        <span class="categoria">Ficção</span>
+                        <a href="#" class="botao-livro">Saiba mais</a>
+                    </div>
+                </article>
+
+                <article class="catalogo-card">
+                    <div class="livro-capa">
+                        <img src="/src/assets/img/iconlivro2.png" alt="Capa do 1984">
+                    </div>
+                    <div class="catalogo-info">
+                        <h3>1984</h3>
+                        <p>George Orwell</p>
+                        <span class="categoria">Ficção distópica</span>
+                        <a href="#" class="botao-livro">Saiba mais</a>
+                    </div>
+                </article>
+
+                <article class="catalogo-card">
+                    <div class="livro-capa">
+                        <img src="/src/assets/img/iconlivro1.jpeg" alt="Capa do livro Orgulho e Preconceito">
+                    </div>
+                    <div class="catalogo-info">
+                        <h3>Orgulho e Preconceito</h3>
+                        <p>Jane Austen</p>
+                        <span class="categoria">Romance</span>
+                        <a href="#" class="botao-livro">Saiba mais</a>
+                    </div>
+                </article>
+
+                <article class="catalogo-card">
+                    <div class="livro-capa">
+                        <img src="/src/assets/img/iconlivro2.png" alt="Capa do livro O Pequeno Principe">
+                    </div>
+                    <div class="catalogo-info">
+                        <h3>O Pequeno Príncipe</h3>
+                        <p>Antoine de Saint-Exupéry</p>
+                        <span class="categoria">Literatura infantojuvenil</span>
+                        <a href="#" class="botao-livro">Saiba mais</a>
+                    </div>
+                </article>
+
+            </div>
+
+            <p class="sem-resultados" id="sem-resultados">
+                Nenhum livro encontrado.
+            </p>
+
+        </section>
 
     </main>
 
