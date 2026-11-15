@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/styles/styles.css">
+    <link rel="stylesheet" href="/src/styles/contato.css">
+    <title>Café e Página - Contato</title>
+    <link rel="shortcut icon" href="/src/assets/icon/favicon.png" type="image/x-icon">
+
+</head>
+<body>
+    <header class="cabecalho">
+        <nav class="navegacao" aria-label="Menu principal">
+            <a href="/src/pages/index.html" class="logo" aria-label="Café & Página - Início">
+                <img src="/src/assets/icon/logoClara.png" alt="Logo Café & Página: uma xícara sobre um livro aberto" width="200">
+            </a>
+            <ul class="menu">
+                <li><a href="/src/pages/index.html" >Início</a></li>
+                <li><a href="/src/pages/cardapio.html">Cardápio</a></li>
+                <li><a href="/src/pages/livros.html">Livros</a></li>
+                <li><a href="/src/pages/sobre.html">Sobre</a></li>
+                <li><a href="/src/pages/contato.html"class="ativo">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="secao-contato">
+
+            <div class="contato-formulario">
+                <h1>Fale conosco</h1>
+                <p class="contato-descricao">
+                    Tem alguma dúvida, sugestão ou quer nos visitar?<br>
+                    Preencha o formulário abaixo e entraremos em
+                    contato o mais breve possível.
+                </p>
+
+                <form class="formulario">
+                    <div class="campo-contato">
+                        <label for="nome">Nome *</label>
+                        <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+                    </div>
+
+                    <div class="campo-contato">
+                        <label for="email">E-mail *</label>
+                        <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                    </div>
+
+                    <div class="campo-contato">
+                        <label for="assunto">Assunto</label>
+                        <input type="text" id="assunto" name="assunto" placeholder="Assunto">
+                    </div>
+
+                    <div class="campo-contato">
+                        <label for="mensagem">Mensagem *</label>
+                        <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem..."required></textarea>
+                    </div>
+
+                    <button type="submit" class="botao-enviar">
+                        Enviar mensagem
+                    </button>
+
+                </form>
+            </div>
+
+            <div class="contato-informacoes">
+
+                <div class="contato-imagem">
+                    <img src="/src/assets/img/hero-mesa.jpeg" alt="Xícara de café e livros sobre uma mesa da cafeteria">
+                </div>
+
+                <div class="lista-informacoes">
+                    <div class="item-informacao">
+                        <span class="icone-contato" aria-hidden="true">📍</span>
+                        <p>
+                            Av. Exemplo, 123<br>
+                            Santo André - SP
+                        </p>
+                    </div>
+
+                    <div class="item-informacao">
+                        <span class="icone-contato" aria-hidden="true">✉</span>
+                        <p>contato@cafeepagina.com</p>
+                    </div>
+
+                    <div class="item-informacao">
+                        <span class="icone-contato" aria-hidden="true">☎</span>
+                        <p>(11) 98765-4321</p>
+                    </div>
+
+                    <div class="item-informacao">
+                        <span class="icone-contato" aria-hidden="true">◷</span>
+                        <p>Seg a Dom | 8h às 22h</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="rodape">
+        <div class="rodape-conteudo">
+            <a href="index.html" class="rodape-logo">
+                <img src="/src/assets/icon/logoClara.png" alt="Café & Página">
+                <div class="rodape-identidade">
+                    <p>Um café para acompanhar cada história.</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="rodape-creditos">
+            <p>© 2026 Café & Página<span class="separador">|</span> Projeto acadêmico — Faculdade Estácio</p>
+        </div>
+    </footer>
+</body>
+</html>

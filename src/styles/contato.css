@@ -1,0 +1,150 @@
+.secao-contato {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 55px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 35px 5%;
+    color: #4a2c2a;
+}
+.contato-formulario h1 {
+    margin-bottom: 12px;
+    font-family: "Playfair Display", serif;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.contato-descricao {
+    max-width: 520px;
+    margin-bottom: 25px;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+.campo-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.campo-contato label {
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+.campo-contato input, .campo-contato textarea {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #c9b9a7;
+    border-radius: 5px;
+    background-color: #fffdf9;
+    color: #4a2c2a;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.85rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+.campo-contato input:focus, .campo-contato textarea:focus {
+    border-color: #8b6b58;
+}
+.campo-contato input::placeholder, .campo-contato textarea::placeholder {
+    color: #a39486;
+}
+.campo-contato textarea {
+    min-height: 130px;
+    resize: vertical;
+}
+.botao-enviar {
+    width: 100%;
+    padding: 12px;
+    margin-top: 2px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4a2c2a;
+    color: #f5efe6;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.botao-enviar:hover {
+    background-color: #63413a;
+}
+.contato-informacoes {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.contato-imagem {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.contato-imagem img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.lista-informacoes {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}
+.item-informacao {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.icone-contato {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 24px;
+    font-size: 1.2rem;
+}
+.item-informacao p {
+    font-size: 0.85rem;
+    line-height: 1.5;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 800px) {
+    .secao-contato {
+        grid-template-columns: 1fr;
+        gap: 35px;
+        padding: 30px 6%;
+    }
+    .contato-informacoes {
+        max-width: 550px;
+    }
+    .contato-imagem {
+        height: 280px;
+    }
+}
+@media (max-width: 480px) {
+    .secao-contato {
+        padding: 25px 5%;
+        gap: 30px;
+    }
+    .contato-formulario h1 {
+        font-size: 1.6rem;
+    }
+    .contato-descricao {
+        font-size: 0.82rem;
+    }
+
+    .campo-contato input, .campo-contato textarea {
+        font-size: 0.8rem;
+    }
+    .contato-imagem {
+        height: 220px;
+    }
+    .item-informacao p {
+        font-size: 0.8rem;
+    }
+}

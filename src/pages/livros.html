@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/styles/styles.css">
+    <link rel="stylesheet" href="/src/styles/livros.css">
+    <title>Café e Página - Livros</title>
+    <link rel="shortcut icon" href="/src/assets/icon/favicon.png" type="image/x-icon">
+
+</head>
+<body>
+    <header class="cabecalho">
+        <nav class="navegacao" aria-label="Menu principal">
+            <a href="/src/pages/index.html" class="logo" aria-label="Café & Página - Início">
+                <img src="/src/assets/icon/logoClara.png" alt="Logo Café & Página: uma xícara sobre um livro aberto" width="200">
+            </a>
+            <ul class="menu">
+                <li><a href="/src/pages/index.html" >Início</a></li>
+                <li><a href="/src/pages/cardapio.html">Cardápio</a></li>
+                <li><a href="/src/pages/livros.html" class="ativo">Livros</a></li>
+                <li><a href="/src/pages/sobre.html">Sobre</a></li>
+                <li><a href="/src/pages/contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="livros-hero">
+            <h1>Uma boa história também<br>combina com café.</h1>
+            <form class="pesquisa-livros" id="form-pesquisa">
+                <input type="search" id="pesquisa" placeholder="Digite o nome do livro..." aria-label="Pesquisar livros">
+                <button type="submit" aria-label="Pesquisar">⌕</button>
+            </form>
+        </section>
+
+        <section class="secao-catalogo">
+            <div class="secao-titulo">
+                <h2>Catálogo</h2>
+                <span></span>
+            </div>
+
+            <div class="catalogo-grid" id="catalogo">
+                <article class="catalogo-card">
+                    <div class="livro-capa">
+                        <img src="/src/assets/img/iconlivro1.jpeg" alt="Capa do livro Dom Casmurro">
+                    </div>
+                    <div class="catalogo-info">
+                        <h3>Dom Casmurro</h3>
+                        <p>Machado de Assis</p>
+                        <span class="categoria">Literatura brasileira</span>
+                        <a href="#" class="botao-livro">Saiba mais</a>
+                    </div>
+                </article>
+
+                <article class="catalogo-card">
+                    <div class="livro-capa">
+                        <img src="/src/assets/img/iconlivro2.png" alt="Capa do livro Frankenstein">
+                    </div>
+                    <div class="catalogo-info">
+                        <h3>Frankenstein</h3>
+                        <p>Mary Shelley</p>
+                        <span class="categoria">Ficção científica</span>
+                        <a href="#" class="botao-livro">Saiba mais</a>
+                    </div>
+                </article>
+
+                <article class="catalogo-card">
+                    <div class="livro-capa">
+                        <img src="/src/assets/img/iconlivro1.jpeg" alt="Capa do livro O Retrato de Dorian Gray">
+                    </div>
+                    <div class="catalogo-info">
+                        <h3>O Retrato de Dorian Gray</h3>
+                        <p>Oscar Wilde</p>
+                        <span class="categoria">Ficção</span>
+                        <a href="#" class="botao-livro">Saiba mais</a>
+                    </div>
+                </article>
+
+                <article class="catalogo-card">
+                    <div class="livro-capa">
+                        <img src="/src/assets/img/iconlivro2.png" alt="Capa do 1984">
+                    </div>
+                    <div class="catalogo-info">
+                        <h3>1984</h3>
+                        <p>George Orwell</p>
+                        <span class="categoria">Ficção distópica</span>
+                        <a href="#" class="botao-livro">Saiba mais</a>
+                    </div>
+                </article>
+
+                <article class="catalogo-card">
+                    <div class="livro-capa">
+                        <img src="/src/assets/img/iconlivro1.jpeg" alt="Capa do livro Orgulho e Preconceito">
+                    </div>
+                    <div class="catalogo-info">
+                        <h3>Orgulho e Preconceito</h3>
+                        <p>Jane Austen</p>
+                        <span class="categoria">Romance</span>
+                        <a href="#" class="botao-livro">Saiba mais</a>
+                    </div>
+                </article>
+
+                <article class="catalogo-card">
+                    <div class="livro-capa">
+                        <img src="/src/assets/img/iconlivro2.png" alt="Capa do livro O Pequeno Principe">
+                    </div>
+                    <div class="catalogo-info">
+                        <h3>O Pequeno Príncipe</h3>
+                        <p>Antoine de Saint-Exupéry</p>
+                        <span class="categoria">Literatura infantojuvenil</span>
+                        <a href="#" class="botao-livro">Saiba mais</a>
+                    </div>
+                </article>
+
+            </div>
+
+            <p class="sem-resultados" id="sem-resultados">
+                Nenhum livro encontrado.
+            </p>
+
+        </section>
+
+    </main>
+
+    <footer class="rodape">
+        <div class="rodape-conteudo">
+            <a href="index.html" class="rodape-logo">
+                <img src="/src/assets/icon/logoClara.png" alt="Café & Página">
+                <div class="rodape-identidade">
+                    <p>Um café para acompanhar cada história.</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="rodape-creditos">
+            <p>© 2026 Café & Página<span class="separador">|</span> Projeto acadêmico — Faculdade Estácio</p>
+        </div>
+    </footer>
+</body>
+</html>
