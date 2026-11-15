@@ -1,94 +1,113 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/src/styles/styles.css">
-    <link rel="stylesheet" href="/src/styles/sobre.css">
-    <title>Café e Página - Sobre</title>
-    <link rel="shortcut icon" href="/src/assets/icon/favicon.png" type="image/x-icon">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre | Café & Página</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="sobre.css">
 </head>
 <body>
-    <header class="cabecalho">
-        <nav class="navegacao" aria-label="Menu principal">
-            <a href="/src/pages/index.html" class="logo" aria-label="Café & Página - Início">
-                <img src="/src/assets/icon/logoClara.png" alt="Logo Café & Página: uma xícara sobre um livro aberto" width="200">
-            </a>
-            <ul class="menu">
-                <li><a href="/src/pages/index.html">Início</a></li>
-                <li><a href="/src/pages/cardapio.html">Cardápio</a></li>
-                <li><a href="/src/pages/livros.html">Livros</a></li>
-                <li><a href="/src/pages/sobre.html" class="ativo">Sobre</a></li>
-                <li><a href="/src/pages/contato.html">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
+  <header class="cabecalho">
+    <a href="index.html" class="logo">
+      <img src="icon/logoClara.png" alt="Xícara de café sobre um livro aberto">
+      <div class="logo-texto">
+        <span class="logo-slogan">Um café para acompanhar cada história.</span>
+      </div>
+    </a>
 
-        <section class="secao-historia">
-            <div class="historia-conteudo">
-                <h1>Nossa história</h1>
-                <p>
-                    O Café & Página surgiu do desejo de criar um espaço
-                    onde café e literatura pudessem dividir a mesma mesa.
-                </p>
+    <nav class="menu">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="cardapio.html">Cardápio</a></li>
+        <li><a href="livros.html">Livros</a></li>
+        <li><a href="sobre.html" class="ativo">Sobre</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
 
-                <p>
-                    Entre uma página e outra, acreditamos que sempre
-                    existe tempo para uma boa conversa, uma bebida
-                    quente e uma boa história.
-                </p>
-            </div>
+  <main>
+     <section class="historia">
+    <div class="historia-texto">
+      <h1>Nossa história</h1>
+      <p>
+        O Café & Página surgiu do desejo de criar um espaço onde café e literatura pudessem dividir a mesma mesa.
+      </p>
+      <p>
+        Entre uma página e outra, acreditamos que sempre existe tempo para uma boa conversa, uma bebida quente e uma nova história.
+      </p>
+    </div>
 
-            <div class="historia-imagem">
-                <img src="/src/assets/img/hero-mesa.jpeg" alt="Ambiente aconchegante da cafeteria com mesas e plantas">
-            </div>
-        </section>
+    <div class="historia-imagem">
+      <img src="img/hero-cafe.jpg" alt="Cafeteria">
+    </div>
+  </section>
 
-        <section class="secao-valores">
-            <div class="valores-grid">
-                <article class="valor-card">
-                    <span class="valor-icone" aria-hidden="true">☕</span>
-                    <h2>Aconchego</h2>
-                    <p>Um espaço para desacelerar.</p>
-                </article>
+  <section class="valores">
+    <h2>Nossos valores</h2>
 
-                <article class="valor-card">
-                    <span class="valor-icone" aria-hidden="true">▣</span>
-                    <h2>Cultura</h2>
-                    <p>Histórias que aproximam pessoas.</p>
-                </article>
+    <div class="valores-cartoes">
 
-                <article class="valor-card">
-                    <span class="valor-icone" aria-hidden="true">♡</span>
-                    <h2>Comunidade</h2>
-                    <p>Um lugar para compartilhar experiências.</p>
-                </article>
-            </div>
+      <article class="cartao">
+        <img src="icon/iconCafe.png" alt="" class="cartao-icone">
+        <h3>Aconchego</h3>
+        <p>Um espaço para desacelerar.</p>
+      </article>
 
-        </section>
-    </main>
+      <article class="cartao">
+        <img src="icon/iconLivro.png" alt="" class="cartao-icone">
+        <h3>Cultura</h3>
+        <p>Histórias que aproximam pessoas.</p>
+      </article>
 
-    <footer class="rodape">
-        <div class="rodape-conteudo">
-            <a href="index.html" class="rodape-logo">
-                <img src="/src/assets/icon/logoClara.png" alt="Café & Página">
-                <div class="rodape-identidade">
-                    <p>Um café para acompanhar cada história.</p>
-                </div>
-            </a>
+      <article class="cartao">
+        <img src="icon/iconCoracao.png" alt="" class="cartao-icone">
+        <h3>Comunidade</h3>
+        <p>Um lugar para compartilhar experiências.</p>
+      </article>
+
+    </div>
+  </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="rodape-topo">
+      <a href="index.html" class="logo">
+        <img src="img/logoClara.png" alt="Xícara de café sobre um livro aberto">
+        <div class="logo-texto">
+          <span class="logo-nome">Café & Página</span>
+          <span class="logo-slogan">Um café para acompanhar cada história.</span>
         </div>
+      </a>
 
-        <div class="rodape-creditos">
-            <p>© 2026 Café & Página<span class="separador">|</span> Projeto acadêmico — Faculdade Estácio</p>
-        </div>
-    </footer>
+      <nav class="menu-rodape">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="cardapio.html">Cardápio</a></li>
+          <li><a href="livros.html">Livros</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+
+      <div class="redes-sociais">
+        <a href="https://www.instagram.com/" aria-label="Instagram">
+          <img src="icon/instagram.png" alt="">
+        </a>
+        <a href="https://www.facebook.com/" aria-label="Facebook">
+          <img src="icon/facebook.png" alt="">
+        </a>
+      </div>
+    </div>
+
+    <div class="rodape-base">
+      <p>© 2026 Café & Página | Projeto acadêmico — Faculdade Estácio</p>
+    </div>
+  </footer>
+
 </body>
 </html>
